@@ -1,0 +1,23 @@
+.encabezadoSobreTuViaje{
+    background-image: url(../assets/excursionfoto.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.seccionSobreTuViaje{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5rem;
+    .divSeccionSobreTuViaje{
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+

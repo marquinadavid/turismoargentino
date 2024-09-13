@@ -1,0 +1,38 @@
+.encabezadoDestinos{
+    background-image: url(../assets/norteargentinofoto2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.seccionDestinosUno{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 5rem;
+    .divDestinosSeccionUno{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .fotoSeccionDestinosUno{
+        width: 100%;
+        height: auto;
+    }
+}
+.seccionDestinosDos{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+    .divDestinosSeccionUno{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .fotoSeccionDestinosUno{
+        width: 100%;
+        height: auto;
+    }
+}

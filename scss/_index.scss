@@ -1,0 +1,82 @@
+// Main Seccion 1
+.bannerUnoDiv {
+    @include flexcontainer;
+    align-content: center;
+    text-align: center;
+    @include espaciado(80px, 30px, 0px, 30px);
+    h2 {
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+    .bannerUnoParrafo {
+        display: flex;
+        text-align: center;
+    }
+}
+.carouselSlide {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 100%;
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // Seccion 2
+.bannerDos {
+    @include flexcontainer;
+    @include espaciado(3rem, 0, 2rem, 0);
+    .bannerDosDiv {
+      align-items: center;
+      text-align: center;
+  
+      h2 {
+        letter-spacing: 2px;
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+    }
+  
+    .fotoIndexSeccion2 {
+      width: 50vw;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+// Seccion 3
+.bannerTres {
+    @include flexcontainer;
+    @include espaciado(3rem, 5rem, 3rem, 5rem);
+    flex-wrap: wrap;
+    text-align: center;
+  
+    img {
+      width: 50vw;
+    }
+  }
+  // Seccion 4
+  // Banner Cuatro
+.bannerCuatro {
+    display: flex;
+    text-align: center;
+    @include espaciado (3rem, 2rem, 5rem, 4rem);
+    margin-bottom: 5rem;
+  
+    div h2 {
+      letter-spacing: 2px;
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+  
+    .fotoIndexSeccion4 {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-width: 100%;
+    }
+  }

@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  $colorlinks: #039;
+  $colorletrasfooter: white;
+  $colorfooter: black;
+
+  @mixin espaciado($top, $left, $bottom, $right) {
+    padding-top: $top;
+    padding-left: $left;
+    padding-bottom: $bottom;
+    padding-right: $right;
+  }
+
+  @mixin flexcontainer ($direction: row, $justify: space-around,) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+  }

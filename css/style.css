@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+header {
+  background-color: white;
+}
+
+.navbar {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+.navbar .navbar-nav li {
+  padding-top: 2rem;
+}
+
+.linksBanner {
+  margin-top: 20px;
+}
+.linksBanner .linksBanner a {
+  background-color: #039;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 5rem;
+}
+footer .divFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 4rem 0 2rem 0;
+}
+footer .divFooter h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+footer .divFooter ul {
+  list-style: none;
+  padding: 0;
+}
+footer .divFooter ul li a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.newsletter-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+.newsletter-container .newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.newsletter-container .newsletter-form label {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.newsletter-container .newsletter-form input {
+  padding: 0.7rem;
+  width: 80%;
+  max-width: 350px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.newsletter-container .newsletter-form button {
+  padding: 0.7rem 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.newsletter-container .newsletter-form button:hover {
+  background-color: black;
+}
+
+.bannerUnoDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  padding-top: 80px;
+  padding-left: 30px;
+  padding-bottom: 0px;
+  padding-right: 30px;
+}
+.bannerUnoDiv h2 {
+  text-align: center;
+}
+.bannerUnoDiv p {
+  text-align: justify;
+}
+.bannerUnoDiv .bannerUnoParrafo {
+  display: flex;
+  text-align: center;
+}
+
+.carouselSlide {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.carouselSlide img {
+  width: 100%;
+  height: auto;
+}
+
+.bannerDos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 3rem;
+  padding-left: 0;
+  padding-bottom: 2rem;
+  padding-right: 0;
+}
+.bannerDos .bannerDosDiv {
+  align-items: center;
+  text-align: center;
+}
+.bannerDos .bannerDosDiv h2 {
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.bannerDos .fotoIndexSeccion2 {
+  width: 50vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.bannerTres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 3rem;
+  padding-left: 5rem;
+  padding-bottom: 3rem;
+  padding-right: 5rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.bannerTres img {
+  width: 50vw;
+}
+
+.bannerCuatro {
+  display: flex;
+  text-align: center;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-bottom: 5rem;
+  padding-right: 4rem;
+  margin-bottom: 5rem;
+}
+.bannerCuatro div h2 {
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.bannerCuatro .fotoIndexSeccion4 {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.encabezadoDestinos {
+  background-image: url(../assets/norteargentinofoto2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.seccionDestinosUno {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+.seccionDestinosUno .divDestinosSeccionUno {
+  text-align: center;
+  margin-top: 1rem;
+}
+.seccionDestinosUno .fotoSeccionDestinosUno {
+  width: 100%;
+  height: auto;
+}
+
+.seccionDestinosDos {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+}
+.seccionDestinosDos .divDestinosSeccionUno {
+  text-align: center;
+  margin-top: 1rem;
+}
+.seccionDestinosDos .fotoSeccionDestinosUno {
+  width: 100%;
+  height: auto;
+}
+
+.encabezadoSobreTuViaje {
+  background-image: url(../assets/excursionfoto.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.seccionSobreTuViaje {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+.seccionSobreTuViaje .divSeccionSobreTuViaje {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.encabezadoAcercaDeNosotros {
+  background-image: url(../assets/fotodeoficina.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.seccionUno {
+  display: block;
+  margin-bottom: 0px;
+  margin-left: 240px;
+  margin-right: 240px;
+  margin-top: 3rem;
+  padding-bottom: 60px;
+  padding-right: 24px;
+  padding-bottom: 60px;
+  padding-left: 24px;
+  text-align: left;
+}
+
+.seccionDos {
+  display: flex;
+  flex-direction: row;
+}
+
+.encabezadoContacto {
+  background-image: url(../assets/sobrenosotrosfoto2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.seccionContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+.seccionContacto .divSeccionContacto {
+  text-align: center;
+  margin-top: 1rem;
+}
+.seccionContacto .fotoSeccionContacto {
+  width: 25vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

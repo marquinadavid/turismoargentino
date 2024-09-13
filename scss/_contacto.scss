@@ -1,0 +1,26 @@
+.encabezadoContacto{
+    background-image: url(../assets/sobrenosotrosfoto2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.seccionContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5rem;
+    .divSeccionContacto{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .fotoSeccionContacto{
+        width: 25vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
