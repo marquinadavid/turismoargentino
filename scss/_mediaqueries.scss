@@ -1,0 +1,169 @@
+@include media-breakpoint-down(sm) {
+    .navbar {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    .carouselSlide img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .bannerUnoDiv {
+      padding: 3rem 2rem;
+    }
+  
+    .bannerDos {
+      flex-direction: column;
+      padding: 0 1rem;
+  
+      .bannerDosDiv {
+        display: flex;
+        flex-direction: column-reverse;
+  
+        h2 {
+          font-size: 25px;
+          margin: 10px;
+        }
+  
+        p {
+          padding-left: 80px;
+          padding-right: 80px;
+        }
+      }
+  
+      .fotoIndexSeccion2 {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+    }
+  
+    .bannerTres {
+      flex-direction: column;
+      padding: 0 1rem 3rem 1rem;
+  
+      img {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+    }
+  
+    .linksBanner {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding-bottom: 3rem;
+        a{
+            background-color: $colorlinks;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+    }
+  
+    .bannerCuatro {
+      padding: 1rem;
+      .row {
+        flex-direction: column-reverse;
+        justify-content: center;
+  
+        div h2 {
+          font-size: 25px;
+          margin-top: 30px;
+          padding: 0 20px;
+          text-align: center;
+        }
+  
+        div p {
+          padding-left: 80px;
+          padding-right: 80px;
+          text-align: center;
+        }
+  
+        img {
+          width: 100%;
+          padding: 0 2rem;
+        }
+      }
+    }
+  
+    .divFooter {
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+  
+      div {
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+  
+      iframe {
+        width: 100%;
+      }
+  
+      .footer-bottom p {
+        text-align: center;
+        font-size: 0.9rem;
+      }
+    }
+    // Pagina Acerca de Nosotros
+    .seccionUno {
+      justify-content: center;
+      text-align: center;
+    }
+    .seccionDos{
+      div p {
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+      }
+    }
+    .seccionDosInvertido{
+      .row {
+        flex-direction: column-reverse;
+      }
+      div p {
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    // Pagina Contacto
+    .parrafoSection {
+      margin: 30px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .fotoSeccionContacto {
+      width: 100%; 
+      height: auto;
+      padding-top: 15px;
+      margin-top: 15px;
+    }
+
+  
+    .divSeccionContacto {
+      margin-bottom: 20px; 
+    }
+
+    .encabezadoDestinos {
+        @include foto-encabezado-sm
+    }
+    .encabezadoSobreTuViaje {
+        @include foto-encabezado-sm
+    }
+    .encabezadoAcercaDeNosotros {
+      @include foto-encabezado-sm
+    }
+    .encabezadoContacto {
+      @include foto-encabezado-sm
+    }
+    
+  }

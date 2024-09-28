@@ -23,7 +23,7 @@ header {
 .linksBanner {
   margin-top: 20px;
 }
-.linksBanner .linksBanner a {
+.linksBanner a {
   background-color: #039;
   color: white;
   text-decoration: none;
@@ -109,6 +109,7 @@ footer .divFooter ul li a {
   padding-right: 30px;
 }
 .bannerUnoDiv h2 {
+  font-family: "Playfair Display", serif;
   text-align: center;
 }
 .bannerUnoDiv p {
@@ -143,6 +144,7 @@ footer .divFooter ul li a {
   text-align: center;
 }
 .bannerDos .bannerDosDiv h2 {
+  font-family: "Playfair Display", serif;
   letter-spacing: 2px;
   font-size: 40px;
   margin-bottom: 30px;
@@ -179,6 +181,7 @@ footer .divFooter ul li a {
   margin-bottom: 5rem;
 }
 .bannerCuatro div h2 {
+  font-family: "Playfair Display", serif;
   letter-spacing: 2px;
   font-size: 40px;
   margin-bottom: 30px;
@@ -200,6 +203,9 @@ footer .divFooter ul li a {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.encabezadoDestinos h1 {
+  font-family: "Playfair Display", serif;
 }
 
 .seccionDestinosUno {
@@ -242,6 +248,9 @@ footer .divFooter ul li a {
   align-items: center;
   text-align: center;
 }
+.encabezadoSobreTuViaje h1 {
+  font-family: "Playfair Display", serif;
+}
 
 .seccionSobreTuViaje {
   display: flex;
@@ -265,23 +274,39 @@ footer .divFooter ul li a {
   align-items: center;
   text-align: center;
 }
+.encabezadoAcercaDeNosotros h1 {
+  font-family: "Playfair Display", serif;
+}
 
 .seccionUno {
-  display: block;
-  margin-bottom: 0px;
-  margin-left: 240px;
-  margin-right: 240px;
-  margin-top: 3rem;
-  padding-bottom: 60px;
-  padding-right: 24px;
-  padding-bottom: 60px;
-  padding-left: 24px;
-  text-align: left;
+  padding: 3rem;
+}
+.seccionUno h2 {
+  text-align: center;
 }
 
 .seccionDos {
   display: flex;
   flex-direction: row;
+  padding-right: 3rem;
+  padding-left: 4rem;
+}
+.seccionDos .textoCentrado {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+}
+
+.seccionDosInvertido {
+  display: flex;
+  flex-direction: row;
+  padding-right: 3rem;
+  padding-left: 4rem;
+}
+.seccionDosInvertido .textoCentrado {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
 }
 
 .encabezadoContacto {
@@ -295,21 +320,259 @@ footer .divFooter ul li a {
   align-items: center;
   text-align: center;
 }
+.encabezadoContacto h1 {
+  font-family: "Playfair Display", serif;
+}
 
 .seccionContacto {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 5rem;
+  padding-top: 0.5rem;
 }
 .seccionContacto .divSeccionContacto {
   text-align: center;
   margin-top: 1rem;
 }
 .seccionContacto .fotoSeccionContacto {
-  width: 25vw;
-  padding-left: 2rem;
+  width: 100%;
+  height: auto;
+}
+.seccionContacto .seccionTitulos {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.parrafoSection {
+  margin: 2rem;
+  padding-left: 24rem;
+  padding-right: 24rem;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+
+.seccionForm {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 5rem;
   padding-right: 2rem;
+}
+
+.parrafoForm h2 {
+  margin-bottom: 3rem;
+}
+
+form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 500px;
+}
+form .inputGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+form label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+form input, form textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: rgb(231, 231, 231);
+  border: 2px solid #F0FAF1;
+  outline: none;
+}
+form .formText {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+form .formText a {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+form .btn {
+  font-size: 16px;
+  color: white;
+  border: 0;
+  border-radius: 25px;
+  background-color: #039;
+  cursor: pointer;
+}
+form .btn:hover {
+  background-color: #039;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .carouselSlide img {
+    width: 100%;
+    height: auto;
+  }
+  .bannerUnoDiv {
+    padding: 3rem 2rem;
+  }
+  .bannerDos {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  .bannerDos .bannerDosDiv {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .bannerDos .bannerDosDiv h2 {
+    font-size: 25px;
+    margin: 10px;
+  }
+  .bannerDos .bannerDosDiv p {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .bannerDos .fotoIndexSeccion2 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .bannerTres {
+    flex-direction: column;
+    padding: 0 1rem 3rem 1rem;
+  }
+  .bannerTres img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .linksBanner {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 3rem;
+  }
+  .linksBanner a {
+    background-color: #039;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  .bannerCuatro {
+    padding: 1rem;
+  }
+  .bannerCuatro .row {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .bannerCuatro .row div h2 {
+    font-size: 25px;
+    margin-top: 30px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .bannerCuatro .row div p {
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+  }
+  .bannerCuatro .row img {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .divFooter {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  .divFooter div {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .divFooter iframe {
+    width: 100%;
+  }
+  .divFooter .footer-bottom p {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .seccionUno {
+    justify-content: center;
+    text-align: center;
+  }
+  .seccionDos div p {
+    text-align: center;
+  }
+  .seccionDos img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .seccionDosInvertido .row {
+    flex-direction: column-reverse;
+  }
+  .seccionDosInvertido div p {
+    text-align: center;
+  }
+  .seccionDosInvertido img {
+    width: 100%;
+    height: auto;
+  }
+  .parrafoSection {
+    margin: 30px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .fotoSeccionContacto {
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  .divSeccionContacto {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) and (max-width: 576px) {
+  .encabezadoDestinos {
+    background-size: cover;
+    background-position: top;
+    height: 50vh;
+    padding: 10px;
+  }
+}
+@media (max-width: 576px) and (max-width: 576px) {
+  .encabezadoSobreTuViaje {
+    background-size: cover;
+    background-position: top;
+    height: 50vh;
+    padding: 10px;
+  }
+}
+@media (max-width: 576px) and (max-width: 576px) {
+  .encabezadoAcercaDeNosotros {
+    background-size: cover;
+    background-position: top;
+    height: 50vh;
+    padding: 10px;
+  }
+}
+@media (max-width: 576px) and (max-width: 576px) {
+  .encabezadoContacto {
+    background-size: cover;
+    background-position: top;
+    height: 50vh;
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

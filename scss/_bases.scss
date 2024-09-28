@@ -6,7 +6,12 @@
   $colorlinks: #039;
   $colorletrasfooter: white;
   $colorfooter: black;
-
+  
+  $breakpoints: (
+  xs: 0,
+  sm: 576px,
+  xl: 1200px
+);
   @mixin espaciado($top, $left, $bottom, $right) {
     padding-top: $top;
     padding-left: $left;
@@ -18,4 +23,20 @@
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
+  }
+  @mixin media-breakpoint-down($size) {
+    $max-width: map-get($breakpoints, $size);
+    @if $max-width {
+      @media (max-width: $max-width) {
+        @content;
+      }
+    }
+  }
+  @mixin foto-encabezado-sm {
+    @include media-breakpoint-down(sm) {
+      background-size: cover;
+      background-position: top;
+      height: 50vh;
+      padding: 10px;
+    }
   }
